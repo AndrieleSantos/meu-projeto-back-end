@@ -3,7 +3,7 @@ const router = express.Router() //aqui estou configurando a primeira parte da ro
 const cors = require('cors') // aqui estou trazendo o pacote Cors que permite consumir essa API no front
 
 const conectaBancoDeDados = require('./bancoDeDados') //aqui estou ligando ao arquivo banco de dados
-conectaBancoDeDados() //estou chamando a funçãoque conecta com o banco de dados
+conectaBancoDeDados() //estou chamando a função que conecta com o banco de dados
 
 const Mulher = require('./mulherModel')
 const app = express() //aqui estou iniciando o app
@@ -19,7 +19,6 @@ async function mostraMulheres(request,response){
     }catch (erro) {
         console.log(erro)
     }
-
 }
 
 //POST
