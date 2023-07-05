@@ -9,7 +9,7 @@ imagem: {
     type: String,
     required: true,
 },
-citação: {
+citacao: {
     type: String,
     required:true
 },

@@ -28,7 +28,7 @@ async function criaMulher(request,response){
         nome: request.body.nome,
         imagem: request.body.imagem,
         minibio: request.body.minibio,
-        citação: request.body.citação
+        citacao: request.body.citacao
         
     }) 
 
@@ -55,8 +55,8 @@ async function corrigeMulher(resquest, response){
         if (request.body.imagem) {
             mulherEncontrada = request.body.imagem
         }
-        if (request.body.citação) {
-        mulherEncontrada = request.body.citação
+        if (request.body.citacao) {
+        mulherEncontrada = request.body.citacao
         }
 
         const mulherAtualizadaNoBancoDeDados = await mulherEncontrada.save()
